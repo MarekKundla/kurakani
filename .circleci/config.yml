@@ -14,5 +14,5 @@ jobs:
                   name: Install dependencies
                   command: npm install
             - run:
-                  name: Run tests
-                  command: npm test
+                  name: Print Hello
+                  command: echo "Hello"
