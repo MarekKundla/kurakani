@@ -4,7 +4,7 @@ jobs:
     build:
         docker:
             - image: node:14
-        working_directory: /kurakani/frontend
+        working_directory: /frontend
 
         steps:
             - checkout
