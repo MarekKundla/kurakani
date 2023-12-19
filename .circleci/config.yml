@@ -15,4 +15,4 @@ jobs:
                   command: npm install
             - run:
                   name: Print Hello
-                  command: echo "Hello"
+                  command: ls
