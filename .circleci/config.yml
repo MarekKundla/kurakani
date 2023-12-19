@@ -8,14 +8,9 @@ jobs:
         steps:
             - checkout
             - run:
-                  name: ls
-                  command: ls
-            - run:
-                  name: Change to frontend directory
-                  command: cd frontend
-            - run:
-                  name: Install dependencies
-                  command: npm install
-            - run:
-                  name: Print Hello
-                  command: ls
+                  name: Change to frontend directory and Install dependencies
+                  command: |
+                      cd frontend
+                      ls
+                      npm install
+                      npm test
