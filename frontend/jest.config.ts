@@ -1,13 +1,13 @@
-import { Config } from 'jest';
-import nextJest from 'next/jest.js';
+import type { Config } from 'jest'
+import nextJest from 'next/jest.js'
 
-// const createJestConfig = nextJest({
-//   dir: './',
-// });
+const createJestConfig = nextJest({
+  dir: './',
+})
 
 const config: Config = {
   coverageProvider: 'babel',
   testEnvironment: 'jsdom',
-};
+}
 
-export default config //createJestConfig(config);
+export default createJestConfig(config)
